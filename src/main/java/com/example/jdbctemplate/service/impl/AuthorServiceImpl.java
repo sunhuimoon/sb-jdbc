@@ -7,6 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+//比如在一个Student实现类上加@Service(“student”)，
+// 括号里面就是给实例化后的Student对象取个名字。
+// 这是在一个接口有多个实现类的情况下区分实现类的方式。
 @Service("authorService")
 public class AuthorServiceImpl implements AuthorService {
     private final AuthorDAO authorDAO;
